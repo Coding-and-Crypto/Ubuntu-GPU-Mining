@@ -5,7 +5,7 @@
 #     AMD Radeon 6600 XT
 #
 
-# To run this script, run it with sudo bash from the home directory ~/
+# To run this script, run it with sudo bash from the home directory ~
 
 # Update Ubuntu
 sudo apt update
