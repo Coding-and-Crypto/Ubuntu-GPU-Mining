@@ -21,7 +21,7 @@ https://pcpartpicker.com/
 Ubuntu 20.04
 
 ### To install Ubuntu on a bare metal PC:
-1. Download Ubuntu https://ubuntu.com/download/desktop
+1. On a separate PC, download Ubuntu https://ubuntu.com/download/desktop
 2. Download Rufus https://rufus.ie/en/
 3. Insert a USB storage device and use Rufus to turn it into an Ubuntu bootable
 4. Plug the USB into your new PC and turn it on
