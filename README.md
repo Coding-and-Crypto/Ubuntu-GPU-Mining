@@ -44,7 +44,7 @@ sudo apt install -y wget
 ```
 #### 2. Download the proper GPU driver software.
 
-If you are using any AMD GPU, you can find information about which software packages to download here: <link>
+If you are using any AMD GPU, you can find information about which software packages to download here: https://www.amd.com/en/support
 
 The link in the code below is the specific AMD GPU Pro driver package compatible with my GPU model.
 ```shell
@@ -60,6 +60,7 @@ chmod +x amdgpu-install
 ```
 Two major keys here: 
 - You must run `./amdgpu-install` or `./amdgpu-pro-install` based on which driver is compatible with your GPU model.
+- Check here to see if your GPU supports the Pro driver https://www.amd.com/en/support/kb/release-notes/rn-radpro-lin-16-40
 - Make sure you add the `--opencl=rocr,legacy` option so that your software will support OpenCL.
 
 #### 4. Configure the driver software.
