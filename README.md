@@ -60,7 +60,7 @@ chmod +x amdgpu-install
 ```
 Two major keys here: 
 - You must run `./amdgpu-install` or `./amdgpu-pro-install` based on which driver is compatible with your GPU model.
-- Check here to see if your GPU supports the Pro driver https://www.amd.com/en/support/kb/release-notes/rn-radpro-lin-16-40
+- Check here to see if your GPU supports the Pro driver https://www.amd.com/en/support/kb/release-notes/rn-radpro-lin-16-40#faq-AMD-Product-Compatibility
 - Make sure you add the `--opencl=rocr,legacy` option so that your software will support OpenCL.
 
 #### 4. Configure the driver software.
