@@ -58,4 +58,6 @@ cd amdgpu-pro-21.30-1290604-ubuntu-20.04/
 chmod +x amdgpu-install
 ./amdgpu-install -y --opencl=rocr,legacy
 ```
-The major key here is that you add the `--opencl=rocr,legacy` option so that your software will support OpenCL.
+Two major keys here: 
+- You must run `./amdgpu-install` or `./amdgpu-pro-install` based on which driver is compatible with your GPU model.
+- Make sure you add the `--opencl=rocr,legacy` option so that your software will support OpenCL.
