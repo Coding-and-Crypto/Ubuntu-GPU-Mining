@@ -61,3 +61,28 @@ chmod +x amdgpu-install
 Two major keys here: 
 - You must run `./amdgpu-install` or `./amdgpu-pro-install` based on which driver is compatible with your GPU model.
 - Make sure you add the `--opencl=rocr,legacy` option so that your software will support OpenCL.
+
+#### 4. Configure the driver software.
+```shell
+sudo usermod -a -G render $LOGNAME
+sudo usermod -a -G video $LOGNAME
+```
+
+#### 5. Download OpenCL and upgrade the driver libraries.
+```shell
+sudo apt-get install -y clinfo
+sudo apt upgrade amdgpu
+```
+
+#### 6. Download a mining software of your choice. I chose LolMiner.
+```shell
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.42/lolMiner_v1.42_Lin64.tar.gz
+tar -xf lolMiner_v1.42_Lin64.tar.gz
+```
+
+#### 7. Restart your PC.
+```shell
+sudo reboot
+```
+
+#### You're good to go! Open LolMiner and choose which hashing algorithm you want to mine!
