@@ -36,13 +36,13 @@ necessary AMD GPU driver software for your PC.
 
 If you have a different GPU model - whether it be NVIDIA or AMD - your steps will change a bit. Here's a breakdown:
 
-1. Update repositories and install `wget`.
+#### 1. Update repositories and install `wget`.
 ```shell
 sudo apt update
 sudo apt dist-upgrade
 sudo apt install -y wget
 ```
-2. Download the proper GPU driver software.
+#### 2. Download the proper GPU driver software.
 
 If you are using any AMD GPU, you can find information about which software packages to download here: <link>
 
@@ -52,7 +52,7 @@ wget --referer https://www.amd.com/en/support/kb/release-notes/rn-amdgpu-unified
 tar xJf amdgpu-pro-21.30-1290604-ubuntu-20.04.tar.xz
 ```
 
-3. Now you need to unpack & install the driver software. Again, the name of my `tar.gz` file is specific to the driver I downloaded.
+#### 3. Now you need to unpack & install the driver software. Again, the name of my `tar.gz` file is specific to the driver I downloaded.
 ```shell
 cd amdgpu-pro-21.30-1290604-ubuntu-20.04/
 chmod +x amdgpu-install
